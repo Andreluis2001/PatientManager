@@ -1,0 +1,9 @@
+PUT http://localhost:4000/patients/0a31e84a-a074-47b8-b619-0f90629bda7b
+Content-Type: application/json
+
+{
+  "name": "Cute big ass Femboy",
+  "email": "xoxo@example.com",
+  "address": "123456 Ass St",
+  "dateOfBirth": "1998-01-01"
+}

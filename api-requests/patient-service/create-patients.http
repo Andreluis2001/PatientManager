@@ -1,0 +1,10 @@
+POST http://localhost:4004/api/patients
+Content-Type: application/json
+
+{
+  "name": "Cute etrergrew ass Femboy",
+  "email": "dwivndjijif@example.com",
+  "address": "trtew Ass St",
+  "dateOfBirth": "1998-01-01",
+  "registeredDate": "2010-06-01"
+}

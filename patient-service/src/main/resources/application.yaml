@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: patient-service
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+
+logging:
+  level:
+    root: info
+    
+grpc:
+  client:
+    billing-service:
+      address: ${BILLING_SERVICE_ADDRESS:localhost}:${BILLING_SERVICE_PORT:9002}
+      negotiation-type: plaintext
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 4001
